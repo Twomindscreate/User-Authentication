@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+        }
+        .ui.container {
+            margin-top: 50px;
+            max-width: 500px;
+        }
+        .ui.header {
+            text-align: center;
+            color: #333;
+        }
+        .ui.form .field.required label:after {
+            content: '*';
+            color: red;
+            padding-left: 5px;
+        }
+        .ui.button {
+            background-color: #4CAF50;
+            color: white;
+        }
+        .ui.button:hover {
+            background-color: #45a049;
+        }
+        .ui.message a {
+            color: #4CAF50;
+        }
+        .ui.icon.input>.icon {
+            color: #4CAF50;
+        }
+        .ui.google.button {
+            background-color: #dd4b39;
+            color: white;
+        }
+        .ui.github.button {
+            background-color: #333;
+            color: white;
+        }
+        @media (max-width: 600px) {
+            .ui.container {
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="ui container">
+    <h2 class="ui header">Register</h2>
+    <form class="ui form">
+        <div class="field required">
+            <label>First Name</label>
+            <div class="ui icon input">
+                <input type="text" name="first-name" placeholder="First Name">
+                <i class="user icon"></i>
+            </div>
+        </div>
+        <div class="field required">
+            <label>Last Name</label>
+            <div class="ui icon input">
+                <input type="text" name="last-name" placeholder="Last Name">
+                <i class="user icon"></i>
+            </div>
+        </div>
+        <div class="field required">
+            <label>Email</label>
+            <div class="ui icon input">
+                <input type="email" name="email" placeholder="Email">
+                <i class="envelope icon"></i>
+            </div>
+        </div>
+        <div class="field required">
+            <label>Password</label>
+            <div class="ui icon input">
+                <input type="password" name="password" placeholder="Password">
+                <i class="lock icon"></i>
+            </div>
+        </div>
+        <div class="field required">
+            <label>Confirm Password</label>
+            <div class="ui icon input">
+                <input type="password" name="confirm-password" placeholder="Confirm Password">
+                <i class="lock icon"></i>
+            </div>
+        </div>
+        <button class="ui fluid button" type="submit">Register</button>
+    </form>
+    <div class="ui horizontal divider">Or</div>
+    <button class="ui google button">
+        <i class="google icon"></i>
+        Sign up with Google
+    </button>
+    <button class="ui github button">
+        <i class="github icon"></i>
+        Sign up with GitHub
+    </button>
+    <div class="ui message">
+        Already have an account? <a href="#">Login</a>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+</body>
+</html>
